@@ -1,0 +1,10 @@
+runc:
+
+real	0m1,346s
+user	0m0,138s
+sys	0m0,058s
+kata-runtime:
+
+real	0m3,197s
+user	0m0,058s
+sys	0m0,072s
