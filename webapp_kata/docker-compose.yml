@@ -1,0 +1,8 @@
+version: '2.3'
+services:
+  webapp:
+    image: robbmue/webapi
+    ports:
+      - 80:80
+    runtime: kata
+

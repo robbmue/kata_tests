@@ -1,0 +1,14 @@
+setup database in runc
+could run container in kata, got the different kernel
+when trying to connecet to database: could not connect to server, temporary failure in name resolution
+Docker is running a resolver in the network namespace of the container and running all DNS traffic through it. And only if dockerd cannot handle the same, it is then send to the host.
+https://github.com/kata-containers/runtime/issues/175
+-> cannot deploy postgres with kata conatiners, maybe that is why sormas deployment failed
+
+wrote script to startup kata with docker (without compose) 
+still same error anyway
+
+NEVER MIND
+Postgresql funktioniert doch mit kata! 
+Das einzige Problem ist, dass sich nicht aus dem Container heraus mit der Datenbank verbunden werden kann(Wieso??????)
+Wird jedoch der Port gepublished und von der Host Machine aus auf die DB zugegriffen ist sie sehr wohl erreichbar.

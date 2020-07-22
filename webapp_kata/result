@@ -1,0 +1,3 @@
+Running a Webapp in a Katacontainers seems to be working just fine
+Could start my webapp in a kata container
+checked with the uname -r command, showed container Kernel, not MANJARO kernel
