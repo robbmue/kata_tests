@@ -8,6 +8,8 @@ services:
     volumes:
       - database-data:/var/lib/postgresql/data/ # persist data even if container shuts downvolumes:
     runtime: kata
+    expose:
+      - 5432
     ports:
       - 5432:5432
 
